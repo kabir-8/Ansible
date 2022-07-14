@@ -23,7 +23,7 @@ Refer to: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-cr
 <p>2. cd inventory</p>
 <p>3. touch hosts</p>
 <p>4. vi hosts and enter your hosts public IP Addresses under a group</p>
-<mark><p>For Example:</p>
+<p>For Example:</p>
 <p></p>
 <p>[ubuntu]</p>
 <p>20.219.73.195</p>
@@ -32,7 +32,6 @@ Refer to: https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quick-cr
 <p>[ubuntu:vars]</p>
 <p>ansible_user=USERNAME</p>
 <p>ansible_password=PASSWORD</p>
-</mark>
 <p>5.ansible -i <host-file-path> ubuntu –m ping</p>
 <p>Example:</p>
 <p> ansible -i ./inventory/hosts ubuntu –m ping</p>
